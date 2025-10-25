@@ -338,7 +338,7 @@ min_number_of_operators = 1
 max_number_of_operators = 2
 block_sample_size = 10
 private_trap = true
-whitelist = ["0x6928fA4f76c7961fb299b5781F4265df5E771edB"]  # ← ADD YOUR OPERATOR ADDRESS
+whitelist = [""]  # ← ADD YOUR OPERATOR ADDRESS
 ```
 
 **Replace:**
