@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  drosera-operator-mev:
+    image: ghcr.io/drosera-network/drosera-operator:latest
+    container_name: drosera-operator-mev
+    ports:
+      - "31317:31317"
+      - "31318:31318"
+    environment:
+      - DRO__DB_FILE_PATH=/data/drosera.db
+      - DRO__DROSERA_ADDRESS=0x91cB447BaFc6e0EA0F4Fe056F5a9b1F14bb06e5D
+      - DRO__LISTEN_ADDRESS=0.0.0.0
+      - DRO__DISABLE_DNR_CONFIRMATION=true
+      - DRO__ETH__CHAIN_ID=560048
+      - DRO__ETH__RPC_URL=https://0xrpc.io/hoodi
+      - DRO__ETH__BACKUP_RPC_URL=https://rpc.hoodi.ethpandaops.io
+      - DRO__ETH__PRIVATE_KEY=${ETH_PRIVATE_KEY}
+      - DRO__NETWORK__P2P_PORT=31317
+      - DRO__NETWORK__EXTERNAL_P2P_ADDRESS=${VPS_IP}
+      - DRO__SERVER__PORT=31318
+      - RUST_LOG=info,drosera_operator=debug
+    volumes:
+      - drosera_data_mev:/data
+    restart: always
+    command: node
+
+volumes:
+  drosera_data_mev:
