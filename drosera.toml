@@ -1,0 +1,16 @@
+ethereum_rpc = "https://0xrpc.io/hoodi"
+drosera_rpc = "https://relay.hoodi.drosera.io"
+eth_chain_id = 560048
+drosera_address = "0x91cB447BaFc6e0EA0F4Fe056F5a9b1F14bb06e5D"
+
+[traps]
+[traps.mevdetector]
+path = "out/MEVDetectorTrap.sol/MEVDetectorTrap.json"
+response_contract = "YOUR_RESPONSE_CONTRACT_ADDRESS"
+response_function = "recordMEVAlert(address,address,address,uint256,uint256,uint256,uint256,uint256)"
+cooldown_period_blocks = 33
+min_number_of_operators = 1
+max_number_of_operators = 2
+block_sample_size = 10
+private_trap = true
+whitelist = [""]
