@@ -1,33 +1,5 @@
 # ⚡ MEV Sandwich Attack Detector
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Solidity](https://img.shields.io/badge/Solidity-^0.8.20-blue)](https://soliditylang.org/)
-[![Foundry](https://img.shields.io/badge/Foundry-Framework-red)](https://getfoundry.sh/)
-[![Drosera](https://img.shields.io/badge/Drosera-Network-green)](https://drosera.io/)
-
-A production-ready trap system for detecting and preventing MEV sandwich attacks on decentralized exchanges, built on the Drosera Network security infrastructure.
-
-## 📋 Table of Contents
-
-- [Overview](#-overview)
-- [How It Works](#-how-it-works)
-- [Features](#-features)
-- [Architecture](#-architecture)
-- [Prerequisites](#-prerequisites)
-- [Installation](#-installation)
-- [Configuration](#-configuration)
-- [Deployment](#-deployment)
-- [Usage](#-usage)
-- [Project Structure](#-project-structure)
-- [Smart Contract Details](#-smart-contract-details)
-- [Monitoring & Analytics](#-monitoring--analytics)
-- [Security Considerations](#-security-considerations)
-- [Testing](#-testing)
-- [Troubleshooting](#-troubleshooting)
-- [Contributing](#-contributing)
-- [License](#-license)
-
----
 
 ## 🎯 Overview
 
